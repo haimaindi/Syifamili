@@ -47,7 +47,7 @@ const KidsView: React.FC<KidsViewProps> = ({ member, growthLogs, language, onAdd
   const handleFetchIdai = async () => {
     setLoadingIdai(true);
     const data = await fetchLatestIdaiSchedule(calculateAgeMonths, language);
-    setAiIdaiSchedule(data);
+    setAiIdaiSchedule(data ?? null);
     setLoadingIdai(false);
   };
 

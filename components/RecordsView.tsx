@@ -328,7 +328,7 @@ const RecordsView: React.FC<RecordsViewProps> = ({ member, records, language, on
                     setAnalyzingId(viewRecord.id); 
                     analyzeMedicalRecord(`Record: ${viewRecord.title}, Diagnosis: ${viewRecord.diagnosis}, Vitals: ${viewRecord.temperature}°C, ${viewRecord.systolic}/${viewRecord.diastolic} mmHg`, language)
                     .then(a => { 
-                      setAiAnalysis(p => ({...p, [viewRecord.id]: a})); 
+                      setAiAnalysis(p => ({...p, [viewRecord.id]: a || ""})); 
                       setAnalyzingId(null); 
                     }); 
                   }} 
