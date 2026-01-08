@@ -4,7 +4,7 @@
  */
 
 // PENTING: Pastikan Deployment Apps Script diset ke "Anyone" (Siapa Saja)
-const SPREADSHEET_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbwS2oemfwSMQQ7HIDHHfsECzM63mhV_EAPxpgkp8HWQHdL5rByxEbRKgTzCGoUBzykq/exec'; 
+const SPREADSHEET_WEB_APP_URL = 'https://script.google.com/macros/s/AKfycbxiiEOym9IvGM78LWKUEgG6c3oArfYLjcVb5VfgarxB5PnReOtfYkeWxFHp-gi-_hms/exec'; 
 
 const isUrlPlaceholder = (url: string) => {
   return !url || url.includes('MASUKKAN_URL') || url === '' || url.length < 20;
